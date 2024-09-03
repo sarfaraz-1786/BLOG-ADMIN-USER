@@ -6,11 +6,14 @@ import SignIn from './pages/SignIn'
 import Dashboard from './pages/Dashboard'
 import Projects from './pages/Projects'
 import SignUp from './pages/SignUp'
+import Header from './components/Header'
+import FooterCom from './components/Footer'
 
 function App() {
 
   return (
     <BrowserRouter>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -19,6 +22,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/projects" element={<Projects />} />
       </Routes>
+      <FooterCom/>
     </BrowserRouter>
   )
 }
